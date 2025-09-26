@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity Donation Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">CharityHub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#causes">Causes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#donate">Donate</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stories">Stories</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero-section text-center text-white d-flex align-items-center">
+    <div class="container">
+      <h1 class="display-4">Make a Difference Today</h1>
+      <p class="lead">Your small contribution can bring big changes.</p>
+      <a href="#donate" class="btn btn-success btn-lg mt-3">Donate Now</a>
+    </div>
+  </header>
+
+  <!-- Causes Section -->
+  <section id="causes" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Causes</h2>
+    <div class="row g-4">
+      
+      <!-- Education Cause -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="edu.png" class="card-img-top" alt="Education">
+          <div class="card-body">
+            <h5 class="card-title">Education for All</h5>
+            <p class="card-text">Support underprivileged children with school supplies and tuition.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food Relief Cause -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="food.jpg" class="card-img-top" alt="Food Relief">
+          <div class="card-body">
+            <h5 class="card-title">Food Relief</h5>
+            <p class="card-text">Help us provide meals to families struggling with hunger.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Healthcare Cause -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="health.jpeg" class="card-img-top" alt="Healthcare">
+          <div class="card-body">
+            <h5 class="card-title">Healthcare Support</h5>
+            <p class="card-text">Donate to provide medicines and basic healthcare facilities.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Donation Form -->
+  <section id="donate" class="p-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Make a Donation</h2>
+      <form id="donationForm" class="col-md-8 mx-auto shadow p-4 rounded bg-white">
+        <div class="mb-3">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="amount" class="form-label">Donation Amount (₹)</label>
+          <input type="number" class="form-control" id="amount" required min="10">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Payment Method</label>
+          <select class="form-select" id="payment" required>
+            <option value="">Select</option>
+            <option value="credit">Credit Card</option>
+            <option value="debit">Debit Card</option>
+            <option value="upi">UPI</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Donate Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Impact Stories -->
+  <section id="stories" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Impact Stories</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="p-4 shadow rounded bg-white">
+            <p>"Thanks to your donations, my children can now attend school with proper books and uniforms!"</p>
+            <h6>- Ramesh, Beneficiary</h6>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 shadow rounded bg-white">
+            <p>"We received food supplies during the lockdown which helped us survive the tough days."</p>
+            <h6>- Anita, Mother of Two</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-4 bg-dark text-white">
+    <p>&copy; 2025 CharityHub | Built with ❤️ for a better world</p>
+  </footer>
+
+  <!-- Bootstrap & jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>

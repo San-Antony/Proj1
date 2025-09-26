@@ -1,0 +1,44 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background: url('https://via.placeholder.com/1600x900') no-repeat center center/cover;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Causes Cards */
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #2c3e50;
+}
+
+/* Donation Form */
+#donationForm {
+  border: 2px solid #28a745;
+}
+
+/* Impact Stories */
+#stories p {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+}
